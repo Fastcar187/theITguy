@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>theITguy - Your One-Stop Tech Solution</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">the<span class="logo-accent">IT</span>guy</span>
+            </div>
+            <div id="nav-menu" class="nav-menu" aria-hidden="true">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#shop" class="nav-link">Shop</a>
+                <a href="#repair" class="nav-link">Repair Lab</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" role="button" aria-expanded="false" aria-controls="nav-menu" tabindex="0">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- AI Course Promo (moved to top) -->
+    <section id="course" class="course-section">
+        <div class="course-container">
+            <div class="course-card">
+                <img src="assets/images/Aicourse.jpeg" alt="AI Training - Register Now">
+                <a class="btn btn-primary btn-register course-cta" href="https://luma.com/fhy4g37f" target="_blank" rel="noopener noreferrer" aria-label="Register for AI Training on Luma">Register Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Your One-Stop 
+                        <span class="gradient-text">Tech Solution</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        From web development to hardware repairs, we provide comprehensive IT services 
+                        with cutting-edge technology and expert craftsmanship.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary">Get Started</button>
+                        <button class="btn btn-secondary">View Portfolio</button>
+                        <!-- Registration button for the course -->
+                        <a class="btn btn-primary btn-register" href="https://luma.com/fhy4g37" target="_blank" rel="noopener noreferrer" aria-label="Register for the course on Luma">Register Now</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div id="hero-animation" class="hero-animation"></div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+    </section>
+
+    <!-- Meet the CEO -->
+    <section id="team" class="team">
+        <div class="team-container">
+            <div class="team-card glass">
+                <div class="team-photo">
+                    <!-- Updated alt text for accessibility -->
+                    <img src="assets/images/theitguyceo.jpeg" alt="Mr. Samuel Nii Attram Tagoe, Chief Executive Officer">
+                </div>
+                <div class="team-info">
+                    <h2 class="section-title">Meet the CEO</h2>
+                    <h3 class="ceo-name">Samuel Nii Attram Tagoe</h3>
+                    <p class="ceo-role">Chief Executive Officer</p>
+                    <div class="team-social">
+                        <a class="social-link" href="https://www.linkedin.com/in/samuel-tagoe?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer" aria-label="Samuel Tagoe on LinkedIn">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.025-3.036-1.849-3.036-1.85 0-2.134 1.445-2.134 2.94v5.665H9.355V9h3.414v1.561h.049c.476-.9 1.637-1.85 3.368-1.85 3.602 0 4.268 2.37 4.268 5.455v6.286zM5.337 7.433a2.062 2.062 0 11.001-4.123 2.062 2.062 0 01-.001 4.123zM6.932 20.452H3.743V9h3.189v11.452z"/></svg>
+                            LinkedIn
+                        </a>
+                    </div>
+                    <p class="section-subtitle">Leading theITguy with a focus on innovation, reliability, and customer-first service.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="trust-bar">
+        <div class="trust-container">
+            <p class="trust-text">Trusted by 500+ clients • Powered by cutting-edge technology</p>
+            <div class="tech-stack">
+                <div class="tech-item">
+                    <span class="tech-name">React</span>
+                </div>
+                <div class="tech-item">
+                    <span class="tech-name">Adobe</span>
+                </div>
+                <div class="tech-item">
+                    <span class="tech-name">Node.js</span>
+                </div>
+                <div class="tech-item">
+                    <span class="tech-name">Figma</span>
+                </div>
+                <div class="tech-item">
+                    <span class="tech-name">AWS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="services-container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Comprehensive tech solutions for modern businesses</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Web Development -->
+                <div class="service-card large-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Web Development</h3>
+                    <p class="service-description">
+                        Custom web applications built with modern frameworks and best practices. 
+                        From responsive designs to complex web systems.
+                    </p>
+                    <div class="service-features">
+                        <span class="feature">React</span>
+                        <span class="feature">Vue.js</span>
+                        <span class="feature">Node.js</span>
+                    </div>
+                </div>
+
+                <!-- Graphic Design -->
+                <div class="service-card medium-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <path d="M12 1v6m0 6v6m11-7h-6m-6 0H1"></path>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Graphic Design</h3>
+                    <p class="service-description">
+                        Creative visual solutions that make your brand stand out. 
+                        Professional designs for digital and print media.
+                    </p>
+                    <div class="service-features">
+                        <span class="feature">Branding</span>
+                        <span class="feature">UI/UX</span>
+                        <span class="feature">Print</span>
+                    </div>
+                </div>
+
+                <!-- Software Services -->
+                <div class="service-card medium-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Software Services</h3>
+                    <p class="service-description">
+                        Custom software solutions tailored to your business needs. 
+                        From desktop applications to mobile apps.
+                    </p>
+                    <div class="service-features">
+                        <span class="feature">Mobile</span>
+                        <span class="feature">Desktop</span>
+                        <span class="feature">API</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop Section -->
+    <section id="shop" class="shop">
+        <div class="shop-container">
+            <div class="section-header">
+                <h2 class="section-title">Tech Shop</h2>
+                <p class="section-subtitle">Premium computers and phones for professionals</p>
+            </div>
+            
+            <div class="shop-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">MacBook Pro</h3>
+                        <p class="product-description">Professional laptop with M-series chip</p>
+                        <div class="product-price">GHS 1,999</div>
+                        <button class="btn btn-outline">View Details</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                                <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">iPhone 15 Pro</h3>
+                        <p class="product-description">Latest smartphone with advanced features</p>
+                        <div class="product-price">GHS 999</div>
+                        <button class="btn btn-outline">View Details</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                                <rect x="2" y="6" width="20" height="12" rx="1"></rect>
+                                <line x1="6" y1="10" x2="6.01" y2="10"></line>
+                                <line x1="18" y1="10" x2="18.01" y2="10"></line>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Gaming PC</h3>
+                        <p class="product-description">High-performance desktop for gaming and work</p>
+                        <div class="product-price">GHS 1,299</div>
+                        <button class="btn btn-outline">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Repair Lab Section -->
+    <section id="repair" class="repair-lab">
+        <div class="repair-container">
+            <div class="repair-content">
+                <div class="repair-text">
+                    <h2 class="section-title">Repair Lab</h2>
+                    <p class="section-subtitle">
+                        Professional computer and phone repair services with same-day turnaround
+                    </p>
+                    <div class="repair-features">
+                        <div class="repair-feature">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="23 4 23 10 17 10"></polyline>
+                                    <polyline points="1 20 1 14 7 14"></polyline>
+                                    <path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"></path>
+                                </svg>
+                            </div>
+                            <span>Same-day repairs</span>
+                        </div>
+                        <div class="repair-feature">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                </svg>
+                            </div>
+                            <span>6-month warranty</span>
+                        </div>
+                        <div class="repair-feature">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <path d="M12 6v6l4 2"></path>
+                                </svg>
+                            </div>
+                            <span>24/7 support</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-large">Book a Fix</button>
+                </div>
+                <div class="repair-visual">
+                    <div class="repair-animation" id="repair-animation"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 class="section-title">Get in Touch</h2>
+                    <p class="section-subtitle">Ready to start your next project?</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                            </div>
+                            <span><a href="tel:+233561104171" aria-label="Call +233 56 110 4171">+233 56 110 4171</a></span>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <span><a href="mailto:01theitguy@gmail.com">01theitguy@gmail.com</a></span>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon whatsapp">
+                                <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M20.52 3.478A11.86 11.86 0 0012.002.028C6.426.028 1.948 4.508 1.95 10.086c0 1.97.52 3.893 1.51 5.58L.437 23.42l7.977-2.095a11.96 11.96 0 005.59 1.325h.003c5.577 0 10.056-4.48 10.056-10.056a10.02 10.02 0 00-3.536-7.117zM12.002 20.03h-.002a10.14 10.14 0 01-5.158-1.43l-.37-.222-4.727 1.24 1.268-4.61-.24-.378A10.16 10.16 0 1112.002 20.03zM17.06 14.59c-.29-.14-1.7-.84-1.96-.93-.26-.09-.45-.14-.64.14s-.73.93-.9 1.12c-.16.19-.33.21-.61.07-.28-.14-1.18-.43-2.25-1.39-.83-.74-1.39-1.66-1.55-1.94-.16-.28-.02-.43.12-.57.12-.12.28-.31.42-.47.14-.16.18-.27.28-.46.09-.19.04-.35-.02-.49-.06-.14-.64-1.54-.88-2.12-.23-.56-.47-.48-.64-.49l-.55-.01c-.19 0-.5.07-.76.36-.26.29-1 1-1 2.44 0 1.43 1.03 2.81 1.17 3.01.14.19 2.02 3.08 4.9 4.31 2.85 1.21 2.85.81 3.36.76.51-.05 1.66-.68 1.9-1.34.24-.66.24-1.23.17-1.35-.07-.12-.26-.19-.57-.33z"/></svg>
+                            </div>
+                            <span><a class="contact-link" href="https://wa.me/233561104171" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp +233 56 110 4171">WhatsApp: +233 56 110 4171</a></span>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <span>123 Tech Street, Accra</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form class="form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">the<span class="logo-accent">IT</span>guy</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                    <a href="#support">Support</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/samuel-tagoe?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="social-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 theITguy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
