@@ -404,10 +404,15 @@ section {
     display: flex;
     gap: 2rem;
     align-items: center;
-    padding: 2rem;
+    padding: 3rem 2rem;
     border-radius: var(--border-radius-lg);
     background: var(--glass-bg);
     border: 1px solid var(--glass-border);
+    transition: all 0.3s ease;
+}
+
+.team-photo {
+    flex-shrink: 0;
 }
 
 .team-photo img {
@@ -415,57 +420,76 @@ section {
     height: 180px;
     object-fit: cover;
     border-radius: 50%;
-    border: 4px solid rgba(15,23,41,0.06);
-    box-shadow: var(--shadow-md);
+    border: 4px solid rgba(3, 105, 161, 0.2);
+    box-shadow: 0 8px 20px rgba(3, 105, 161, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .team-info {
     max-width: 720px;
+    flex: 1;
 }
 
 .team .section-title {
-    margin: 0 0 0.75rem 0;
+    margin: 0 0 0.5rem 0;
+    font-size: 1.8rem;
 }
 
 .team .section-subtitle {
     color: var(--dark-charcoal);
+    line-height: 1.6;
+    font-size: 0.95rem;
+    margin: 1.2rem 0 0 0;
 }
 
 .ceo-name {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 700;
-    margin: 0.25rem 0 0.25rem 0;
+    margin: 0.5rem 0 0.35rem 0;
     color: var(--dark-charcoal);
+    letter-spacing: -0.5px;
 }
 
 .ceo-role {
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     font-weight: 600;
-    margin: 0 0 0.75rem 0;
-    color: var(--muted);
+    margin: 0 0 1rem 0;
+    color: var(--primary-blue);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
 }
 
 .team-social {
-    margin: 0.5rem 0 1rem 0;
+    margin: 1rem 0 1.5rem 0;
+    display: flex;
+    gap: 1rem;
 }
 
 .team-social .social-link {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 0.5rem;
-    color: var(--muted);
+    color: var(--white);
     text-decoration: none;
     font-weight: 600;
+    padding: 0.65rem 1.2rem;
+    background: linear-gradient(135deg, var(--primary-blue), var(--accent-violet));
+    border-radius: var(--border-radius);
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    min-height: 44px;
 }
 
 .team-social .social-link svg {
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
     fill: currentColor;
 }
 
 .team-social .social-link:hover {
-    color: var(--primary-blue);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(3, 105, 161, 0.3);
 }
 
 .section-header {
@@ -886,6 +910,16 @@ section {
     .contact-content {
         gap: 3rem;
     }
+    
+    .team-card {
+        gap: 2.5rem;
+        padding: 2.5rem 2rem;
+    }
+    
+    .team-photo img {
+        width: 170px;
+        height: 170px;
+    }
 }
 
 /* Responsive Design - Mobile */
@@ -1045,18 +1079,48 @@ section {
     
     .team-card {
         flex-direction: column;
-        gap: 1.5rem;
-        padding: 1.5rem;
+        gap: 2rem;
+        padding: 2rem 1.5rem;
         text-align: center;
     }
     
     .team-photo img {
-        width: 140px;
-        height: 140px;
+        width: 160px;
+        height: 160px;
     }
     
     .team-info {
         max-width: 100%;
+    }
+    
+    .team .section-title {
+        font-size: 1.6rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .ceo-name {
+        font-size: 1.3rem;
+        margin: 0.5rem 0 0.25rem 0;
+    }
+    
+    .ceo-role {
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+    }
+    
+    .team-social {
+        justify-content: center;
+        margin: 1.2rem 0 1.5rem 0;
+    }
+    
+    .team-social .social-link {
+        padding: 0.65rem 1rem;
+        font-size: 0.85rem;
+    }
+    
+    .team .section-subtitle {
+        font-size: 0.9rem;
+        margin-top: 1rem;
     }
     
     .trust-container {
@@ -1299,6 +1363,49 @@ section {
     .team-photo img {
         width: 120px;
         height: 120px;
+    }
+    
+    .team-container {
+        padding: 0 0.75rem;
+    }
+    
+    .team-card {
+        padding: 1.5rem 1rem;
+        gap: 1.5rem;
+    }
+    
+    .team-photo img {
+        width: 130px;
+        height: 130px;
+    }
+    
+    .team .section-title {
+        font-size: 1.4rem;
+    }
+    
+    .ceo-name {
+        font-size: 1rem;
+        margin: 0.5rem 0 0.2rem 0;
+    }
+    
+    .ceo-role {
+        font-size: 0.75rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .team-social {
+        margin: 1rem 0 1.2rem 0;
+    }
+    
+    .team-social .social-link {
+        padding: 0.6rem 0.9rem;
+        font-size: 0.8rem;
+        min-height: 40px;
+    }
+    
+    .team .section-subtitle {
+        font-size: 0.85rem;
+        margin-top: 0.8rem;
     }
     
     .ceo-name {
