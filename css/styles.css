@@ -842,9 +842,63 @@ section {
     font-size: 0.9rem;
 }
 
-/* Responsive Design */
+/* Responsive Design - Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .hero-content {
+        gap: 2.5rem;
+    }
+    
+    .hero-title {
+        font-size: 2.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.05rem;
+    }
+    
+    .hero-animation {
+        width: 320px;
+        height: 320px;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+    
+    .large-card {
+        grid-row: auto;
+        grid-column: 1 / -1;
+    }
+    
+    .shop-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .section-title {
+        font-size: 2.2rem;
+    }
+    
+    .repair-content {
+        gap: 3rem;
+    }
+    
+    .contact-content {
+        gap: 3rem;
+    }
+}
+
+/* Responsive Design - Mobile */
 @media (max-width: 768px) {
     /* Mobile nav: slide-in panel for daylight theme */
+    .nav-container {
+        padding: 0 1rem;
+    }
+    
+    .logo-text {
+        font-size: 1.25rem;
+    }
+
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -856,7 +910,7 @@ section {
         text-align: center;
         transition: left 0.28s ease;
         box-shadow: 0 12px 30px rgba(15, 23, 41, 0.06);
-        padding: 1.25rem 0;
+        padding: 1.5rem 0;
         z-index: 999;
         display: flex;
         gap: 0;
@@ -867,16 +921,25 @@ section {
     }
 
     .nav-menu .nav-link {
-        padding: 0.85rem 0;
+        padding: 1rem 0;
         display: block;
         color: var(--dark-charcoal);
         font-weight: 600;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
     }
     
     .nav-toggle {
         display: flex;
         z-index: 1001;
         padding: 0.5rem;
+        min-width: 44px;
+        min-height: 44px;
+        align-items: center;
+        justify-content: center;
     }
 
     /* Hamburger -> X animation */
@@ -892,6 +955,23 @@ section {
         transform: translateY(-6px) rotate(-45deg);
     }
     
+    section {
+        padding: 3rem 0;
+    }
+    
+    .course-container {
+        margin: 0 auto 2rem auto;
+        padding: 0 1rem;
+    }
+    
+    .hero {
+        padding: 100px 0 60px;
+    }
+    
+    .hero-container {
+        padding: 0 1rem;
+    }
+    
     .hero-content {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -900,31 +980,166 @@ section {
     
     .hero-title {
         font-size: 2.5rem;
+        line-height: 1.1;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+        max-width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    
+    .hero-visual {
+        margin: 1rem 0;
+    }
+    
+    .hero-animation {
+        width: 100%;
+        max-width: 300px;
+        height: 300px;
     }
     
     .hero-buttons {
         justify-content: center;
         flex-wrap: wrap;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .btn {
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+        min-height: 44px;
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .btn-register {
+        padding: 1rem 1.5rem;
+    }
+    
+    .course-cta {
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+        bottom: 12px;
+        width: calc(100% - 24px);
+        text-align: center;
+        padding: 0.85rem 1rem;
+        font-size: 0.95rem;
+        min-height: 44px;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+    
+    .section-header {
+        margin-bottom: 2rem;
+    }
+    
+    .team-container {
+        padding: 0 1rem;
+    }
+    
+    .team-card {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1.5rem;
+        text-align: center;
+    }
+    
+    .team-photo img {
+        width: 140px;
+        height: 140px;
+    }
+    
+    .team-info {
+        max-width: 100%;
     }
     
     .trust-container {
         flex-direction: column;
         gap: 1rem;
         text-align: center;
+        padding: 0 1rem;
+    }
+    
+    .trust-text {
+        font-size: 0.85rem;
     }
     
     .tech-stack {
         flex-wrap: wrap;
         justify-content: center;
+        gap: 1rem;
+    }
+    
+    .tech-item {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.75rem;
+    }
+    
+    .services-container {
+        padding: 0 1rem;
     }
     
     .services-grid {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
+        gap: 1.5rem;
     }
-    
+
     .large-card {
         grid-row: auto;
+    }
+
+    .service-card {
+        padding: 1.5rem;
+    }
+    
+    .service-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .service-title {
+        font-size: 1.25rem;
+    }
+    
+    .service-description {
+        font-size: 0.95rem;
+    }
+    
+    .shop-container {
+        padding: 0 1rem;
+    }
+    
+    .shop-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .product-card {
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    
+    .product-image {
+        height: 180px;
+    }
+    
+    .product-title {
+        font-size: 1.1rem;
+    }
+    
+    .product-price {
+        font-size: 1.35rem;
+    }
+    
+    .repair-container {
+        padding: 0 1rem;
     }
     
     .repair-content {
@@ -932,40 +1147,275 @@ section {
         gap: 2rem;
     }
     
+    .repair-animation {
+        width: 100%;
+        max-width: 280px;
+        height: 280px;
+    }
+    
+    .repair-features {
+        gap: 1.2rem;
+        margin: 1.5rem 0;
+    }
+    
+    .repair-feature {
+        gap: 0.75rem;
+    }
+    
+    .feature-icon {
+        min-width: 40px;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .contact-container {
+        padding: 0 1rem;
+    }
+    
     .contact-content {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
     
+    .contact-details {
+        gap: 1.2rem;
+        margin: 1.5rem 0;
+    }
+    
+    .contact-item {
+        gap: 0.75rem;
+        min-height: 44px;
+        align-items: flex-start;
+    }
+    
+    .contact-icon {
+        min-width: 40px;
+        width: 40px;
+        height: 40px;
+        margin-top: 0.25rem;
+    }
+    
+    .form {
+        padding: 1.5rem;
+    }
+    
+    .form-group {
+        margin-bottom: 1.2rem;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        padding: 0.85rem;
+        font-size: 16px;
+        min-height: 44px;
+    }
+    
+    .footer-container {
+        padding: 0 1rem;
+    }
+    
     .footer-content {
         flex-direction: column;
-        gap: 1rem;
+        gap: 1.5rem;
         text-align: center;
     }
     
     .footer-links {
         justify-content: center;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero-title {
-        font-size: 2rem;
+        flex-wrap: wrap;
+        gap: 1rem;
     }
     
-    .section-title {
-        font-size: 2rem;
+    .footer-social {
+        justify-content: center;
+    }
+    
+
+@media (max-width: 480px) {
+    :root {
+        --section-padding: 2rem 0;
+    }
+    
+    .nav-container {
+        padding: 0 0.75rem;
+    }
+    
+    .logo-text {
+        font-size: 1rem;
+    }
+    
+    .hero {
+        padding: 80px 0 50px;
+        min-height: auto;
+    }
+    
+    .hero-container {
+        padding: 0 0.75rem;
+    }
+    
+    .hero-title {
+        font-size: 1.75rem;
+        line-height: 1.15;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.95rem;
+        line-height: 1.5;
+        margin-bottom: 1.5rem;
+    }
+    
+    .hero-animation {
+        width: 100%;
+        max-width: 250px;
+        height: 250px;
+        margin-top: 1rem;
     }
     
     .btn {
-        padding: 0.75rem 1.5rem;
+        padding: 0.875rem 1.25rem;
+        font-size: 0.95rem;
+        width: 100%;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+        line-height: 1.2;
+    }
+    
+    .section-subtitle {
+        font-size: 0.95rem;
+    }
+    
+    .team-container {
+        padding: 0 0.75rem;
+    }
+    
+    .team-card {
+        padding: 1.25rem;
+        gap: 1.25rem;
+    }
+    
+    .team-photo img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .ceo-name {
+        font-size: 1.1rem;
+    }
+    
+    .ceo-role {
+        font-size: 0.85rem;
+    }
+    
+    .trust-container {
+        padding: 0 0.75rem;
+    }
+    
+    .trust-text {
+        font-size: 0.8rem;
+    }
+    
+    .tech-item {
+        padding: 0.4rem 0.65rem;
+        font-size: 0.7rem;
+    }
+    
+    .services-container {
+        padding: 0 0.75rem;
+    }
+    
+    .service-card {
+        padding: 1.25rem;
+    }
+    
+    .service-title {
+        font-size: 1.1rem;
+    }
+    
+    .service-description {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+    
+    .shop-container {
+        padding: 0 0.75rem;
+    }
+    
+    .product-image {
+        height: 160px;
+    }
+    
+    .product-info {
+        padding: 1.25rem;
+    }
+    
+    .product-title {
+        font-size: 1rem;
+    }
+    
+    .product-description {
         font-size: 0.9rem;
     }
     
-    .hero-animation,
+    .product-price {
+        font-size: 1.25rem;
+    }
+    
+    .repair-container {
+        padding: 0 0.75rem;
+    }
+    
     .repair-animation {
-        width: 250px;
-        height: 250px;
+        width: 100%;
+        max-width: 220px;
+        height: 220px;
+    }
+    
+    .repair-feature {
+        gap: 0.65rem;
+    }
+    
+    .feature-icon {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .contact-container {
+        padding: 0 0.75rem;
+    }
+    
+    .form {
+        padding: 1.25rem;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        padding: 0.75rem;
+        font-size: 16px;
+    }
+    
+    .footer {
+        padding: 2rem 0 0.75rem;
+    }
+    
+    .footer-container {
+        padding: 0 0.75rem;
+    }
+    
+    .footer-links a,
+    .social-link {
+        font-size: 0.8rem;
+    }
+    
+    .footer-bottom {
+        padding-top: 1rem;
+        font-size: 0.8rem;
+    }
+    
+    .hero-buttons {
+        gap: 0.75rem;
     }
 }
 
