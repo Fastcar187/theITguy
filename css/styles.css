@@ -181,6 +181,18 @@ body {
     flex-wrap: wrap;
 }
 
+/* Center buttons in common container areas */
+.hero-buttons {
+    justify-content: center;
+}
+
+.product-info,
+.repair-text,
+.contact-form .form,
+.course-card {
+    text-align: center;
+}
+
 .btn {
     padding: 1rem 2rem;
     border: none;
